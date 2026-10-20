@@ -1,3 +1,15 @@
+@font-face {
+    font-family:"abc";
+    src: url(fuentes/Comfortaa.ttf);
+}
+@font-face {
+    font-family:"def";
+    src: url(fuentes/JosefinSans-Bold.ttf);
+}
+@font-face {
+    font-family:"ghi";
+    src: url(fuentes/SpaceGrotesk-SemiBold.ttf);
+}
 *{
 margin: 10px;
 padding: 10px;
@@ -42,9 +54,9 @@ en el contenedor Texto-principal, esta el nombre del consultorio con un H1 y la 
     flex-flow: row nowrap;
     flex: 1 1 auto;
     background-image: url("../imagenes/fondo.jpg");
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .menú{
     background: #6b0606;
@@ -97,35 +109,71 @@ height:100px;
 .nav a:hover{
     color: #343434;
 }
-.social{
+.social-icon{
      background: #dbea54;
     flex: 1 1 auto;
     width: 40%;
      height: 82px;
 }
-.social a{
+/*.social-icon a{
     font-size:50px;
     color:#fff;
     padding: 0 4px;
      height: 100%;
      width: 100%;
     
+}*/
+.social-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
 }
-.social a:hover{
-color: #343434;
+.social-icon [class*="icon-"], .pie [class*="icon-"]{
+    color:#ffedff;
+    /*margin-left: 10px;*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:20px;
+    width: 35px;
+    height:35px;
+    background:#78a5f8;
+    border-radius:50%;
+    margin:10px;
+    padding:0;
+}
+.social-icon [class*="icon-"] i, .pie [class*="icon-"] i{
+    margin:0;
+    padding:0;
+    line-height:1;
+}
+.social-icon_link{
+    text-decoration: none;
+    margin:0;
+    padding:0;  
+}
+.social-icon [class*="icon-"]:hover, .pie [class*="icon-"]:hover{
+    color: #343434;
+    background: white;
 }
 .texto-principal{
-   
+
     height: 200px;
 }
 h1{
-    
-    font-family: 'lora',serif;
+    font-family:"def";
+    font-weight:bold;
     font-size: 45px;
     color: #78a5f8;
     font-weight: 300;
     text-align: center;
     line-height: 1.6;
+}
+#letra{
+    font-family:"ghi";
+    /*color:#000;*/
 }
 
 /* En el SECTION, hay 2 contenedores. Un Div en donde se encuentran 2 article. Y un Aside donde hay varios div
@@ -209,7 +257,8 @@ h3{
     text-align: center;
 }
 p{
-color: #000;
+    color: #000;
+    font-family:"abc";
     font-size: 23px;
     padding: 10px 0;
     margin-top: 80px;
@@ -251,21 +300,55 @@ el nav que le puse , por un parrafo*/
 .footer{
     background: #000;
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
     margin-top: 10px;
 }
 .pie{
     background: #e62f29;
     width: 100%;
-    text-align:10px
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 20px;
 }
-.pie a {
+/*.pie a {
     color: #fff;
      text-transform: uppercase;
       padding: 0  10px ;
       letter-spacing: 2px;
+}*/
+.pie-columna{
+    flex: 1 1 220px;
+    text-align: center;
 }
-
+.pie-columna h5{
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+    padding: 0;
+}
+.pie-columna p{
+    color: #fff;
+    font-size: 14px;
+    margin: 4px 0;
+    padding: 0;
+}
+.pie-redes{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.copy{
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    margin: 0;
+}
 
 /* estos son los responsives, para que las cajas se acomoden se como agranden la pantalla.
 cuando agrando la pantalla a todo lo que dà, queda mal el Aside,hay que hacer que las cajas de publicidad
@@ -281,7 +364,7 @@ footer tambien deberia acortarse, porque se vá se ancho.*/
 height: auto;}
 .aside{display: flex;
 justify-content: center;}
-.texto-principal{height: 450px;}
+/*.texto-principal{height: 450px;}*/
 h1{font-size: 15px;}}
 
 @media all and(max-width:762px){
