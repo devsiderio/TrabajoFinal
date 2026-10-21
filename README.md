@@ -51,3 +51,9 @@ formulario con validación nativa, botón para cambiar de tema (automático, cla
   sitio real hace falta un backend o un servicio de formularios, y validación
   del lado del servidor.
 - Los datos de contacto, direcciones y redes sociales son de ejemplo.
+
+## Equipo desarrollador
+
+- [Susana Maggio](https://github.com/susanamaggio2)
+- [Ailén Micaela Ramírez](https://github.com/Ailen-18)
+- [Mariano Javier Portal](https://github.com/devsiderio)
