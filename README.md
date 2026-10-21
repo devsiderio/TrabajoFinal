@@ -1,4 +1,4 @@
-# Consultorios Centrales
+# Consultorios Centrales 🏥
 
 Sitio web de una página para solicitar turnos en Consultorios Centrales. Incluye
 formulario con validación nativa, botón para cambiar de tema (automático, claro, oscuro), foto de especialista, carrusel de fotos y publicidades que rotan automáticamente.
