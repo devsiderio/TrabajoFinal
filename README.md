@@ -3,6 +3,10 @@
 Sitio web de una página para solicitar turnos en Consultorios Centrales. Incluye
 formulario con validación nativa, botón para cambiar de tema (automático, claro, oscuro), foto de especialista, carrusel de fotos y publicidades que rotan automáticamente.
 
+## Demo
+
+[Ver el sitio en GitHub Pages](https://susanamaggio2.github.io/TrabajoFinal/)
+
 ## Estructura
 
 ```
